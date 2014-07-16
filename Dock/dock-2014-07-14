@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DOCKUTIL=/usr/local/bin/dockutil
+
+$DOCKUTIL --remove all
+
+$DOCKUTIL --add '/Applications/Launchpad.app' --no-restart
+$DOCKUTIL --add '/Applications/Managed Software Center.app' --no-restart
+$DOCKUTIL --add '/Applications/Google Chrome.app' --no-restart
+$DOCKUTIL --add '/Applications/Safari.app' --no-restart
+$DOCKUTIL --add '~/Downloads'
+
+exit 0
+
