@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -p /etc/facter/facts.d
+
+if [ -e /etc/facter/facts.d/hardware_tag.txt ]; then
+  rm "/etc/facter/facts.d/mac_role.txt"
+fi
+
+exit 0
