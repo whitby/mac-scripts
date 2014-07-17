@@ -1,0 +1,10 @@
+:cachedir: '/Users/vvrantchan/Dropbox/code/hub/whitby_puppet/r10k/cache'
+:sources:
+  :plops:
+    remote: 'git@github.com:whitby/puppet-environment'
+    basedir: './environments'
+    purge: true
+  :hiera:
+    remote: 'git@github.com:whitby/hieradata'
+    basedir: './hieradata'
+    purge: true

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ -d /etc/puppet/environments ]; then
+  /bin/rm -rf /etc/puppet/environments
+fi
+if [ -d /etc/puppet/hieradata ]; then
+  /bin/rm -rf /etc/puppet/hieradata
+fi
+
+exit 0

@@ -1,0 +1,6 @@
+#!/bin/sh
+ENVIRONMENT=production
+
+/bin/cp -fr /etc/puppet/environments/$ENVIRONMENT/hiera.yaml /etc/puppet/hiera.yaml
+/usr/bin/puppet apply --environment $ENVIRONMENT --environmentpath=/etc/puppet/environments /etc/puppet/environments/$ENVIRONMENT/manifests/site.pp
+
