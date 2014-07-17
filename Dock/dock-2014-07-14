@@ -4,10 +4,12 @@ DOCKUTIL=/usr/local/bin/dockutil
 
 $DOCKUTIL --remove all
 
+$DOCKUTIL --add '/Applications/Mission Control.app' --no-restart
 $DOCKUTIL --add '/Applications/Launchpad.app' --no-restart
 $DOCKUTIL --add '/Applications/Managed Software Center.app' --no-restart
-$DOCKUTIL --add '/Applications/Google Chrome.app' --no-restart
 $DOCKUTIL --add '/Applications/Safari.app' --no-restart
+$DOCKUTIL --add '/Applications/iBooks.app' --no-restart
+$DOCKUTIL --add '/Applications/Maps.app' --no-restart
 $DOCKUTIL --add '~/Downloads'
 
 exit 0
