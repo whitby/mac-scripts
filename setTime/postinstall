@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Time Settings
+TimeServer1=time.apple.com
+TimeZone=America/New_York
+"$3"/usr/sbin/systemsetup -setnetworktimeserver $TimeServer1
+"$3"/usr/sbin/systemsetup -settimezone $TimeZone
+"$3"/usr/sbin/ntpd -g
