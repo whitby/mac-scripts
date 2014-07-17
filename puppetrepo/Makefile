@@ -6,7 +6,8 @@ REVERSE_DOMAIN=edu.whitby
 PAYLOAD= \
 pack-script-postinstall \
 pack-environments \
-pack-hieradata
+pack-hieradata \
+pack-Library-LaunchDaemons-edu.whitby.puppet.schedule.plist
 
 l_etc:
 	@sudo mkdir -p ${WORK_D}/etc
