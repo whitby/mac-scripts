@@ -20,11 +20,11 @@ l_etc_puppet: l_etc
 	@sudo chmod 755 ${WORK_D}/etc/puppet
 
 pack-environments: l_etc_puppet
-	@sudo cp -R ./environments /etc/puppet/
+	@sudo cp -R ./environments ${WORK_D}/etc/puppet/
 	@sudo chown -R puppet:puppet ${WORK_D}/etc/puppet/
 	@sudo chmod -R 755 ${WORK_D}/etc/puppet
 
 pack-hieradata: l_etc_puppet
-	@sudo cp -R ./hieradata /etc/puppet/
+	@sudo cp -R ./hieradata ${WORK_D}/etc/puppet/
 	@sudo chown -R puppet:puppet ${WORK_D}/etc/puppet/
 	@sudo chmod -R 755 ${WORK_D}/etc/puppet

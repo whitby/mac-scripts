@@ -8,7 +8,8 @@
     <array>
       <string>/usr/bin/puppet</string>
       <string>apply</string>
-      <string>environment</string>
+      <string>--environment</string>
+      <string>production</string>
       <string>--environmentpath=/etc/puppet/environments</string>
       <string>/etc/puppet/environments/production/manifests/site.pp</string>
     </array>

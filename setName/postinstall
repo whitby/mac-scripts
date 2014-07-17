@@ -1,0 +1,5 @@
+#!/bin/bash
+
+the_command=$(ioreg -c IOPlatformExpertDevice | awk -F '\"' '/IOPlatformSerialNumber/ {print $4}')
+/usr/sbin/scutil --set ComputerName "$the_command.whitbyschool.net"
+/usr/sbin/scutil --set HostName "$the_command.whitbyschool.net"
