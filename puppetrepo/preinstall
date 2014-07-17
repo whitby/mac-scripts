@@ -1,10 +1,12 @@
-#!/bin/sh
+#!/bin/bash
+ENVDIR="/etc/puppet/environments"
+HIERADIR="/etc/puppet/hieradata"
 
-if [ -d /etc/puppet/environments ]; then
-  /bin/rm -rf /etc/puppet/environments
+if [ -d "$ENVDIR" ]; then
+  /bin/rm -rf $ENVDIR
 fi
-if [ -d /etc/puppet/hieradata ]; then
-  /bin/rm -rf /etc/puppet/hieradata
+if [ -d "$HIERADIR" ]; then
+  /bin/rm -rf $HIERADIR
 fi
 
 exit 0

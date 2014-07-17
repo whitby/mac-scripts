@@ -5,7 +5,6 @@ PACKAGE_VERSION=3.0.0
 REVERSE_DOMAIN=edu.whitby
 PAYLOAD= \
 pack-script-postinstall \
-pack-script-preinstall \
 pack-environments \
 pack-hieradata
 
