@@ -4,7 +4,7 @@ include /usr/local/share/luggage/luggage.make
 TITLE=set_desktops
 PACKAGE_NAME=${TITLE}
 REVERSE_DOMAIN=com.grahamgilbert
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.1
 PAYLOAD=\
 	pack-Library-Management-scriptRunner-once-set_wallpaper-20140320 \
 	pack-Library-Management-bin-set_desktops.py

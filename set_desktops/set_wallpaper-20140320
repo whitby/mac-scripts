@@ -1,3 +1,4 @@
 #!/bin/bash
 
+sleep 15
 /usr/bin/python /Library/Management/bin/set_desktops.py --path "/Library/Desktop Pictures/Elephant.jpg"

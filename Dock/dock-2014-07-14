@@ -10,6 +10,7 @@ $DOCKUTIL --add '/Applications/Managed Software Center.app' --no-restart
 $DOCKUTIL --add '/Applications/Safari.app' --no-restart
 $DOCKUTIL --add '/Applications/iBooks.app' --no-restart
 $DOCKUTIL --add '/Applications/Maps.app' --no-restart
+$DOCKUTIL --add '/Applications/System Preferences.app' --no-restart
 $DOCKUTIL --add '~/Downloads'
 
 exit 0
