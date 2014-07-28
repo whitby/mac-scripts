@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/usr/bin/open '/Applications/Box Edit.app'
+
+exit 0
+
