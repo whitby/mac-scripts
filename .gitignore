@@ -1,4 +1,5 @@
 *.pkg
+*.zip
 /puppetrepo/environments
 /puppetrepo/hieradata
 */logstash-forwarder

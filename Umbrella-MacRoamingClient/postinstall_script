@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PKG_VERSION=1.5.25
+INSTALLER_DIR="/tmp/umbrella"
+
+cd $INSTALLER_DIR && \
+/usr/sbin/installer -verbose -pkg RoamingClient_MAC_$PKG_VERSION.pkg -target /
+
+rm -rf $INSTALLER_DIR
+
+exit 0
