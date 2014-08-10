@@ -1,1 +1,1 @@
-role=vagrantvm
+role=student
