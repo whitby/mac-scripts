@@ -1,0 +1,15 @@
+#!/bin/bash
+# Run the MunkiWebAdmin postflight script if it's present.
+
+if [ -f /usr/local/munki/mwa-postflight ]
+  then
+    /usr/local/munki/mwa-postflight
+fi
+# Run the Sal postflight script if it's present.
+
+if [ -f /usr/local/munki/sal-postflight ]
+  then
+    /usr/local/munki/sal-postflight
+fi
+
+exit 0
