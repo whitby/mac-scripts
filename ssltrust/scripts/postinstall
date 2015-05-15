@@ -1,0 +1,4 @@
+#!/bin/bash
+ 
+/usr/bin/security add-trusted-cert -d -r trustRoot -k "/Library/Keychains/System.keychain" "/private/tmp/certs/root-ca.crt" 
+/usr/bin/srm "/private/tmp/certs/root-ca.crt"

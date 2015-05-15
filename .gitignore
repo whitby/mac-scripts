@@ -3,3 +3,4 @@
 /puppetrepo/environments
 /puppetrepo/hieradata
 */logstash-forwarder
+*.DS_Store
