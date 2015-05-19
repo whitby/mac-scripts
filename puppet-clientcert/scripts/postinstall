@@ -1,0 +1,10 @@
+#!/bin/bash
+UUID=$(/usr/bin/facter sp_platform_uuid)
+/bin/cp /private/tmp/puppetcerts/ca.pem /etc/puppet/ssl/certs/ca.pem
+/bin/cp /private/tmp/puppetcerts/puppetcert.pem /etc/puppet/ssl/certs/${UUID}.pem
+/bin/cp /private/tmp/puppetcerts/private_key.pem /etc/puppet/ssl/private_keys/${UUID}.pem
+
+/usr/bin/srm -rf /private/tmp/puppetcerts
+/usr/sbin/chown -R puppet:puppet /etc/puppet/ssl/
+/bin/chmod -R 0600 /etc/puppet/ssl/
+

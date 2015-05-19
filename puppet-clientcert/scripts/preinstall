@@ -1,0 +1,12 @@
+#!/bin/bash
+UUID=$(/usr/bin/facter sp_platform_uuid)
+if [ -f /etc/puppet/ssl/certs/ca.pem ]; then
+	/bin/rm -f /etc/puppet/ssl/certs/ca.pem
+fi
+if [ -f  /etc/puppet/ssl/certs/${UUID}.pem ]; then
+	/bin/rm -f /etc/puppet/ssl/certs/${UUID}.pem
+fi
+if [ -f /etc/puppet/ssl/private_keys/${UUID}.pem ]; then
+	/bin/rm -f /etc/puppet/ssl/private_keys/${UUID}.pem
+fi
+
