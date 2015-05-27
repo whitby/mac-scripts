@@ -1,0 +1,3 @@
+#!/bin/bash
+UUID=$(/usr/bin/facter sp_platform_uuid|tr '[:upper:]' '[:lower:]')
+/usr/bin/sed -i '' "/certname/s/puppet/${UUID}/" /etc/puppet/puppet.conf

@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ -f /etc/puppet/puppet.conf ]; then
+	/bin/rm -f /etc/puppet/puppet.conf
+fi
+if [ -f  /etc/puppet/routes.yaml ]; then
+	/bin/rm -f /etc/puppet/routes.yaml
+fi
+if [ -f /etc/puppet/puppetdb.conf ]; then
+	/bin/rm -f /etc/puppet/puppetdb.conf
+fi
+
