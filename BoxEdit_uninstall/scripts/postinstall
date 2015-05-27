@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -d '/Applications/Box Edit.app' ]; then
+	rm -rf '/Applications/Box Edit.app'
+fi
+
+if [ -d '/Library/Internet Plug-Ins/Box Edit.plugin' ]; then
+	rm -rf '/Library/Internet Plug-Ins/Box Edit.plugin'
+fi
