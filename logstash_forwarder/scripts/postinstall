@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/bin/launchctl stop com.elastic.logstash-forwarder
+/bin/launchctl unload /Library/LaunchDaemons/com.elastic.logstash-forwarder.plist
+/bin/launchctl load /Library/LaunchDaemons/com.elastic.logstash-forwarder.plist
+/bin/launchctl start com.elastic.logstash-forwarder
