@@ -24,5 +24,11 @@
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
+	<key>StandardErrorPath</key>
+	<string>/var/log/logstash-forwarder.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/logstash-forwarder.log</string>
+	<key>WorkingDirectory</key>
+	<string>/var/run</string>
 </dict>
 </plist>
