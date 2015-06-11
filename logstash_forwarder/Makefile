@@ -1,9 +1,9 @@
-USE_PKGBUILD=1
-include /usr/local/share/luggage/luggage.make
+PKGVERSION=0.4.0
+PKGNAME=logstash_forwarder
+PKGID=com.elastic.logstash-forwarder
+all: clean build
 
-TITLE=logstash-forwarder
-PACKAGE_NAME=${TITLE}
-REVERSE_DOMAIN=com.elasticsearch
-PACKAGE_VERSION=0.3.1
-PAYLOAD=\
-	pack-usr-local-bin-logstash-forwarder
+clean:
+	rm out/${PKGNAME}-${PKGVERSION}.pkg
+build:
+	pkgbuild --root pkgroot --identifier ${PKGID} --version ${PKGVERSION} --scripts scripts out/${PKGNAME}-${PKGVERSION}.pkg
