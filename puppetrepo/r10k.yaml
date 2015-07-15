@@ -5,6 +5,6 @@
     basedir: './environments'
     purge: true
   :hiera:
-    remote: 'git@github.com:whitby/hieradata'
+    remote: 'git@bitbucket.org:whitbyschool/hieradata'
     basedir: './hieradata'
     purge: true
