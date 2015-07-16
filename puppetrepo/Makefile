@@ -1,7 +1,7 @@
 USE_PKGBUILD=1
 include /usr/local/share/luggage/luggage.make
 TITLE=puppetrepo
-PACKAGE_VERSION=3.0.9
+PACKAGE_VERSION=3.3.8
 REVERSE_DOMAIN=edu.whitby
 PAYLOAD= \
 pack-script-postinstall \
