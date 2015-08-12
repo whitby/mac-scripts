@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/local/bin/yo -t "Office 2016 is now available" -i /tmp/whitby.jpeg
+/usr/bin/srm /tmp/whitby.jpeg
