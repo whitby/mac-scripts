@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/bin/launchctl stop com.github.groob.yo-trigger
+/bin/launchctl unload /Library/LaunchAgents/com.github.groob.yo-trigger.plist
+/bin/launchctl load /Library/LaunchAgents/com.github.groob.yo-trigger.plist
+/bin/launchctl start com.github.groob.yo-trigger

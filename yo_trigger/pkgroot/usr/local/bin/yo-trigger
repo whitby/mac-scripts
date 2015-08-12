@@ -1,0 +1,3 @@
+#!/bin/bash
+MESSAGE=`(cat /tmp/yo-message)`
+/usr/local/bin/yo -t "$MESSAGE" -i /tmp/yo-icon.png
