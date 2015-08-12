@@ -1,4 +1,5 @@
 #!/bin/bash
-
-/usr/local/bin/yo -t "Office 2016 is now available" -i /tmp/whitby.jpeg
-/usr/bin/srm /tmp/whitby.jpeg
+/usr/bin/touch /Library/Management/Triggers/yo
+sleep 2
+/usr/bin/srm /tmp/yo-icon.png
+/usr/bin/srm /tmp/yo-message

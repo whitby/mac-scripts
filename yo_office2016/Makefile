@@ -1,4 +1,4 @@
-PKGVERSION=1.0.0
+PKGVERSION=1.0.5
 PKGNAME="yo_office2016"
 PKGID=edu.whitby.yo.office2016
 
