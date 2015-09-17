@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/python /Library/Management/java_se_fix/modify_java.py
